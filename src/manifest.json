@@ -1,5 +1,7 @@
 {
     "name" : "Linkedin Kişi Bilgileri Çekme",
+    "description": "Bu bir chrome eklentisidir. Kişinin profiline girdiğinizde adını, titrini ve profil url'ini tek seferde kopyalamanızı sağlar.",
+    "author": "Furkan Tolga Yüce",
     "version" : "0.1",
     "manifest_version" : 2,
     "page_action": {
