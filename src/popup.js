@@ -23,13 +23,27 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+let is_gelistirme = document.getElementById('is_gelistirme');
 let kopyala = document.getElementById('copyText');
+
+is_gelistirme.onclick = function() {
+  let name = document.getElementById('name').textContent.trim()
+  let title = document.getElementById('title').textContent.trim()
+  let url = document.getElementById('url').textContent.trim()
+  var alan = name+"\t\t\t\t"+title+"\t"+url
+  var textAlani = document.createElement('TEXTAREA');
+  textAlani.value = alan;
+  document.body.appendChild(textAlani);
+  textAlani.select();
+  document.execCommand('copy');
+  textAlani.style.display = 'none';
+};
 
 kopyala.onclick = function() {
   let name = document.getElementById('name').textContent.trim()
   let title = document.getElementById('title').textContent.trim()
   let url = document.getElementById('url').textContent.trim()
-  var alan = name+"\t\t\t\t"+title+"\t"+url
+  var alan = name+"\t"+title+"\t"+url
   var textAlani = document.createElement('TEXTAREA');
   textAlani.value = alan;
   document.body.appendChild(textAlani);

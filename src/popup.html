@@ -1,30 +1,38 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
   </head>
   <body>
-    <h3 style="font-weight:bold; text-align:center;">Kişi Bilgileri</h3>
-    <div class="kisi">
-    <table style="width:400px">
-        <tbody>
-        <tr>
-            <td><b>İsim:</b></td>
-            <td><span id="name">N/A</span></td>
-        </tr>
-        <tr>
-            <td><b>Title:</b></td>
-            <td><span id="title">N/A</span></td>
-        </tr>
-        <tr>
-            <td><b>URL:</b></td>
-            <td><span id="url">N/A</span></td>
-        </tr>
-        </tbody>
-        </table>
-    </div>
-    <hr>
-        <center><button id="copyText">Kopyala</button></center>
+    <div class="card p-2" style="width:400px;">
+            <div class="card-body">
+              <h5 class="card-title" id="name" >N/A</h5>
+              <p class="card-text" id="title">N/A</p>
+              <p class="card-text"><small class="text-muted" id="url">N/A</small></p>
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-sm btn-secondary active">
+                  <input type="radio" name="options" id="copyText" checked> Kopyala
+                </label>
+                <label class="btn btn-sm btn-secondary">
+                  <input type="radio" name="options" id="is_gelistirme"> İş Geliştirme
+                </label>
+              </div>
+
+            </div>
+        </div>
         <script type="text/javascript" src="popup.js"></script>
-    </body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
 </html>
